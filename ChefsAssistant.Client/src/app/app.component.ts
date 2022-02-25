@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ChefsAssistant.Client';
+  currentFeature = 'recipes';
+
+  onNavigate(feature: string) {
+    this.currentFeature = feature;
+  }
 }
